@@ -19,7 +19,7 @@ ssh-keygen -t rsa -C "to.sungyongcho@gmail.com" -f "$HOME/.ssh/id_rsa_github"
 echo "ssh-keygen for 42intra\n"
 ssh-keygen -t rsa -C "$USER@student.42.fr" -f "$HOME/.ssh/id_rsa_42intra"
 
-cp ./etc/ssh_config.txt $HOME/.ssh/config
+cp ./config/ssh_config.txt $HOME/.ssh/config
 
 eval "$(ssh-agent -s)"
 
