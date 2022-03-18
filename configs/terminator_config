@@ -1,0 +1,19 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#263137"
+    cursor_color = "#aaaaaa"
+    font = MesloLGS NF 12
+    foreground_color = "#eceef0"
+    palette = "#546d79:#ff5151:#69f0a1:#ffd73f:#40c4fe:#ff3f80:#64fdca:#fefefe:#b0bec4:#ff8980:#b9f6c9:#ffe47e:#80d7fe:#ff80ab:#a7fdeb:#fefefe"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

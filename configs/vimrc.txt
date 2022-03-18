@@ -1,0 +1,18 @@
+" default settings
+set nu
+set noeol
+syntax on
+set autoindent
+set tabstop=4
+set mouse=an
+set cursorline
+set ignorecase
+set ruler
+set title
+
+" for SHIFT + 'arrowup/arrowdown' for line swap
+" try it!
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>

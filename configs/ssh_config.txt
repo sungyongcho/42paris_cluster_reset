@@ -1,0 +1,11 @@
+# account1
+Host github.com
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_github
+
+# account2
+Host 42.fr
+   HostName vogsphere-v2.42.fr
+   User sucho
+   IdentityFile ~/.ssh/id_rsa_42intra
