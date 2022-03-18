@@ -1,0 +1,16 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "cmd+b",
+		"command": "workbench.action.tasks.test"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.terminal.focus"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	}
+]

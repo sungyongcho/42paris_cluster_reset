@@ -7,8 +7,8 @@ setxkbmap -layout us -option ctrl:swapcaps
 xset r rate 280 40
 
 # vimrc
-cp ./etc/vimrc.txt $HOME/.vimrc
-cp ./etc/gitconfig.txt $HOME/.gitconfig
+cp ./configs/vimrc.txt $HOME/.vimrc
+cp ./configs/gitconfig.txt $HOME/.gitconfig
 
 nautilus ./fonts
 
@@ -20,9 +20,9 @@ ssh-keygen -t rsa -C "$USER@student.42.fr" -f "$HOME/.ssh/id_rsa_42intra"
 
 cp ./etc/ssh_config.txt $HOME/.ssh/config
 
-eval "$(ssh-agent -s)" 
+eval "$(ssh-agent -s)"
 
-ssh-add $HOME/.ssh/id_rsa_42intra 
+ssh-add $HOME/.ssh/id_rsa_42intra
 
 ssh-add $HOME/.ssh/id_rsa_github
 
@@ -45,6 +45,10 @@ code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode.cpptools
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension vscodevim.vim
+
+#copy and paster vscode settings
+cp ./vscode_settings/settings.json $HOME/.config/Code/User/
+cp ./vscode_settings/keybindings.json $HOME/.config/Code/User/
 
 echo "ssh pubkey for Github\n\n"
 cat $HOME/.ssh/id_rsa_github.pub
