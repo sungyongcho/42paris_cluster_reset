@@ -1,32 +1,3 @@
-#!/bin/sh
-
-# swap ctrl and caps lock
-setxkbmap -layout us -option ctrl:swapcaps
-setxkbmap -layout us -option altwin:swap_alt_win
-
-# key repeat rate change
-xset r rate 280 40
-
-# vimrc
-cp ./configs/vimrc.txt $HOME/.vimrc
-cp ./configs/gitconfig.txt $HOME/.gitconfig
-
-nautilus ./fonts
-
-mkdir $HOME/.ssh
-echo "ssh-keygen for github\n"
-ssh-keygen -t rsa -C "to.sungyongcho@gmail.com" -f "$HOME/.ssh/id_rsa_github"
-echo "ssh-keygen for 42intra\n"
-ssh-keygen -t rsa -C "$USER@student.42.fr" -f "$HOME/.ssh/id_rsa_42intra"
-
-cp ./config/ssh_config.txt $HOME/.ssh/config
-
-eval "$(ssh-agent -s)"
-
-ssh-add $HOME/.ssh/id_rsa_42intra
-
-ssh-add $HOME/.ssh/id_rsa_github
-
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &> /dev/null
 
@@ -54,5 +25,5 @@ cp ./vscode_settings/keybindings.json $HOME/.config/Code/User/
 echo "ssh pubkey for Github\n\n"
 cat $HOME/.ssh/id_rsa_github.pub
 
-echo "ssh pubkey for 42 Intra\n\n"
-cat $HOME/.ssh/id_rsa_42intra.pub
+echo "ssh pubkey for 41 Intra\n\n"
+cat $HOME/.ssh/id_rsa_41intra.pub
