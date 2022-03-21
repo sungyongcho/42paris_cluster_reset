@@ -1,5 +1,7 @@
 #!/bin/sh
 
+## env. var.
+TERMINATOR_DIR="$HOME/.config/terminator"
 
 ## dconf load
 # check out:
@@ -9,16 +11,16 @@ dconf load / < ./configs/dconf_user.conf
 
 ## terminator default config
 
-# make directory
-mkdir $HOME/.config/terminator/config
+# make directory for terminator config
+[ ! -d "$TERMINATOR_DIR" ] && mkdir -p "$TERMINATOR_DIR"
 # copy configs
 cp ./configs/terminator_config $HOME/.config/terminator/config
 
-# vimrc
+## vimrc
 cp ./configs/vimrc.txt $HOME/.vimrc
 cp ./configs/gitconfig.txt $HOME/.gitconfig
 
-# mkdir $HOME/.ssh
+## mkdir $HOME/.ssh
 echo "ssh-keygen for github\n"
 ssh-keygen -t rsa -C "to.sungyongcho@gmail.com" -f "$HOME/.ssh/id_rsa_github"
 echo "ssh-keygen for 42intra\n"
@@ -28,9 +30,9 @@ cp ./config/ssh_config.txt $HOME/.ssh/config
 
 eval "$(ssh-agent -s)"
 
-ssh-add $HOME/.ssh/id_rsa_42intra
-
 ssh-add $HOME/.ssh/id_rsa_github
+
+ssh-add $HOME/.ssh/id_rsa_42intra
 
 
 # oh-my-zsh
