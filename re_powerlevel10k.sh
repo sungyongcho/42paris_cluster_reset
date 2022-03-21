@@ -7,6 +7,6 @@ echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZD
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-sed -i "" "s|robbyrussell|powerlevel10k/powerlevel10k|g" $HOME/.zshrc
+sed -i $HOME/.zshrc -e "s|robbyrussell|powerlevel10k/powerlevel10k|g"
 
 source $HOME/.zshrc
