@@ -18,7 +18,7 @@ cp ./configs/terminator_config $HOME/.config/terminator/config
 cp ./configs/vimrc.txt $HOME/.vimrc
 cp ./configs/gitconfig.txt $HOME/.gitconfig
 
-mkdir $HOME/.ssh
+# mkdir $HOME/.ssh
 echo "ssh-keygen for github\n"
 ssh-keygen -t rsa -C "to.sungyongcho@gmail.com" -f "$HOME/.ssh/id_rsa_github"
 echo "ssh-keygen for 42intra\n"
