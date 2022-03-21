@@ -1,5 +1,12 @@
 #!/bin/sh
 
+
+## dconf load
+# check out:
+# https://askubuntu.com/questions/26056/where-are-gnome-keyboard-shortcuts-stored
+
+dconf load / < ./configs/dconf_user.conf
+
 ## terminator default config
 
 # make directory
