@@ -1,7 +1,11 @@
 #!/bin/sh
 
-# terminator default config
-cp ~/.configs/terminator_config $HOME/.config/terminator/config
+## terminator default config
+
+# make directory
+mkdir $HOME/.config/terminator/config
+# copy configs
+cp ./configs/terminator_config $HOME/.config/terminator/config
 
 # vimrc
 cp ./configs/vimrc.txt $HOME/.vimrc
@@ -21,6 +25,23 @@ ssh-add $HOME/.ssh/id_rsa_42intra
 
 ssh-add $HOME/.ssh/id_rsa_github
 
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &> /dev/null
+
+code --install-extension kube.42header
+code --install-extension MariusvanWijk-JoppeKoers.codam-norminette-3
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-vscode.cpptools
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension vscodevim.vim
+
+# copy and paster vscode settings
+cp ./vscode_settings/settings.json $HOME/.config/Code/User/
+cp ./vscode_settings/keybindings.json $HOME/.config/Code/User/
+
+# print out ssh-keys
 echo "ssh pubkey for Github\n\n"
 cat $HOME/.ssh/id_rsa_github.pub
 
