@@ -47,7 +47,7 @@
   "C_Cpp.default.cppStandard": "c++98",
   "C_Cpp.default.cStandard": "c11",
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-  "C_Cpp.default.intelliSenseMode": "clang-arm64", // for M1, if intel, change to "clang-x64"
+  "C_Cpp.default.intelliSenseMode": "clang-x64", // for AMD64, if ML, change to "clang-arm64"
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, ColumnLimit: 0, DerivePointerAlignment: false, PointerAlignment: Right }",
   "C_Cpp.updateChannel": "Insiders",
   "workbench.startupEditor": "newUntitledFile",
