@@ -4,7 +4,7 @@
   "terminal.external.linuxExec": "iterm",
   "terminal.external.osxExec": "iTerm2.app",
   "terminal.integrated.fontFamily": "MesloLGS NF",
-  "42header.email": "sucho@student.42seoul.kr",
+  "42header.email": "sucho@student.42.fr",
   "42header.username": "sucho",
   "editor.renderControlCharacters": true,
   "workbench.colorCustomizations": {
@@ -35,7 +35,7 @@
   "editor.quickSuggestions": {
     "strings": true
   },
-  //   "editor.formatOnSave": false,
+  "editor.formatOnSave": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "explorer.confirmDragAndDrop": false,
@@ -47,12 +47,17 @@
   "C_Cpp.default.cppStandard": "c++98",
   "C_Cpp.default.cStandard": "c11",
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-  "C_Cpp.default.intelliSenseMode": "clang-x64", // for AMD64, if ML, change to "clang-arm64"
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, ColumnLimit: 0, DerivePointerAlignment: false, PointerAlignment: Right }",
-  "C_Cpp.updateChannel": "Insiders",
+  "C_Cpp.default.intelliSenseMode": "clang-arm64", // for M1, if intel, change to "clang-x64"
+  //   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, ColumnLimit: 0, DerivePointerAlignment: false, PointerAlignment: Right }",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.iconTheme": "vscode-icons",
-  "C_Cpp.intelliSenseEngineFallback": "Enabled",
+  "C_Cpp.intelliSenseEngineFallback": "enabled",
+  "[php]": {
+    "editor.quickSuggestions": {
+      "comments": true
+    },
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
   "files.associations": {
     "*.c": "c",
     "*.h": "c",
@@ -60,9 +65,15 @@
     "*.hpp": "cpp",
     "*.mdx": "markdown"
   },
+  "[c]": {
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.renderWhitespace": "all"
+  },
   "[cpp]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
+    // "editor.tabSize": 2,
+    "editor.insertSpaces": false,
     "editor.wordBasedSuggestions": false,
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true
@@ -75,9 +86,6 @@
   // javascript start
   "diffEditor.ignoreTrimWhitespace": false,
   //   "eslint.format.enable": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "prettier.singleQuote": true,
   "[json]": {
     "editor.formatOnSave": true,
@@ -86,6 +94,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
@@ -126,11 +137,60 @@
   "editor.bracketPairColorization.enabled": true,
   //javascript end
   "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
   },
   "python.linting.enabled": true,
   "python.linting.pycodestyleEnabled": true,
-  "python.linting.pylintArgs": ["--reports", "12", "--disable", "I0011"]
+  "python.linting.pylintArgs": ["--reports", "12", "--disable", "I0011"],
+  "python.formatting.autopep8Args": ["--indent-size=4"],
+  "python.formatting.provider": "autopep8",
+  "leetcode.workspaceFolder": "/Users/wwaya/.leetcode",
+  "terminal.integrated.inheritEnv": false,
+  "python.defaultInterpreterPath": "/Users/wwaya/Documents/miniconda3/envs/scikitlearn/bin/python",
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1671934040621,
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Test,test,Tests,tests}/**/*Test.php"
+  ],
+  "php.suggest.basic": false,
+  "emmet.includeLanguages": {
+    "php": "html"
+  },
+  "php.validate.executablePath": "/opt/homebrew/bin/php",
+  "php-docblocker.qualifyClassNames": true,
+  "php-docblocker.classTemplate": {
+    "message": {
+      "gapAfter": true,
+      "content": "@covers DefaultClass ${1:fqcn}"
+    },
+    "param": {
+      "gapBefore": true
+    },
+    "author": {
+      "content": "@author ${###:Sungyong Cho} <${###:sucho@student.42.fr}>"
+    },
+    "package": {
+      "content": "@package ${1:description}"
+    }
+  },
+  "redhat.telemetry.enabled": false,
+  "git.openRepositoryInParentFolders": "always",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
