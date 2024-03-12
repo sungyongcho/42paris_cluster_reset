@@ -1,31 +1,59 @@
 // Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaults
 [
-  {
-    "key": "alt+space",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	{
+	  "key": "alt+space",
+	  "command": "editor.action.triggerSuggest",
+	  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+	  "key": "ctrl+space",
+	  "command": "-editor.action.triggerSuggest",
+	  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+	  "key": "alt+escape",
+	  "command": "-editor.action.triggerSuggest",
+	  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+space",
-    "command": "-editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	  "key": "ctrl+.",
+	  "command": "editor.action.quickFix",
+	  "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
   {
-    "key": "alt+escape",
-    "command": "-editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	  "key": "ctrl+.",
+	  "command": "-editor.action.quickFix",
+	  "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+	  "key": "ctrl+k ctrl+.",
+	  "command": "-editor.removeManualFoldingRanges",
+	  "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+	  "key": "ctrl+.",
+	  "command": "-editor.changeDropType",
+	  "when": "dropWidgetVisible"
+  },
+  {
+	  "key": "ctrl+.",
+	  "command": "-editor.changePasteType",
+	  "when": "pasteWidgetVisible"
+  },
+  {
+	  "key": "ctrl+.",
+	  "command": "-acceptSelectedCodeAction",
+	  "when": "codeActionMenuVisible"
+  },
+  {
+	  "key": "ctrl+.",
+	  "command": "workbench.action.terminal.showQuickFixes",
+	  "when": "terminalFocus"
+  },
+  {
+	  "key": "ctrl+.",
+	  "command": "-workbench.action.terminal.showQuickFixes",
+	  "when": "terminalFocus"
   }
-  // {
-  // 	"key": "cmd+b",
-  // 	"command": "workbench.action.tasks.test"
-  // },
-  // {
-  // 	"key": "ctrl+`",
-  // 	"command": "workbench.action.terminal.focus"
-  // },
-  // {
-  // 	"key": "ctrl+`",
-  // 	"command": "workbench.action.focusActiveEditorGroup",
-  // 	"when": "terminalFocus"
-  // }
-]
+  ]
