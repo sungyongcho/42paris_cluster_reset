@@ -49,6 +49,8 @@ code --install-extension vscodevim.vim
 # Add chrome-singletone alias to .zshrc
 echo 'alias chrome-singletone="rm -rf ~/.config/google-chrome/Singleton*"' >> $HOME/.zshrc
 
+# remove emoji keymapping
+gsettings set org.freedesktop.ibus.panel.emoji hotkey "[]"
 
 # copy and paster vscode settings
 cp ./vscode_settings/settings.json $HOME/.config/Code/User/
