@@ -1,199 +1,190 @@
 {
-	"editor.minimap.enabled": false,
-	"editor.suggestSelection": "first",
-	"terminal.external.linuxExec": "iterm",
-	"terminal.external.osxExec": "iTerm2.app",
-	"terminal.integrated.fontFamily": "MesloLGS NF",
-	"42header.email": "sucho@student.42.fr",
-	"42header.username": "sucho",
-	"editor.renderControlCharacters": true,
-	"workbench.colorCustomizations": {
-	  "terminal.foreground": "#eceef0",
-	  "terminal.background": "#263137",
-	  "terminal.ansiBlack": "#546d79",
-	  "terminal.ansiBlue": "#40c4fe",
-	  "terminal.ansiCyan": "#64fcda",
-	  "terminal.ansiGreen": "#69f0ad",
-	  "terminal.ansiMagenta": "#ff3f80",
-	  "terminal.ansiRed": "#ff5151",
-	  "terminal.ansiWhite": "#fefefe",
-	  "terminal.ansiYellow": "#ffd73f",
-	  "terminal.ansiBrightBlack": "#b0bec4",
-	  "terminal.ansiBrightBlue": "#80d7fe",
-	  "terminal.ansiBrightCyan": "#a7fdeb",
-	  "terminal.ansiBrightGreen": "#b9f6c9",
-	  "terminal.ansiBrightMagenta": "#ff80ab",
-	  "terminal.ansiBrightRed": "#ff8980",
-	  "terminal.ansiBrightWhite": "#fefefe",
-	  "terminal.ansiBrightYellow": "#ffe47e"
-	},
-	"editor.tabSize": 4,
-	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
-	"editor.renderWhitespace": "all",
-	"editor.mouseWheelZoom": false, // 필요할때 마다 바꾸기
-	"editor.quickSuggestions": {
-	  "strings": true
-	},
-	"editor.formatOnSave": false,
-	"files.insertFinalNewline": true,
-	"files.trimTrailingWhitespace": true,
-	"explorer.confirmDragAndDrop": false,
-	"terminal.integrated.fontSize": 14,
-	"explorer.confirmDelete": false,
-	"vsicons.dontShowNewVersionMessage": true,
-	"workbench.editor.showTabs": true,
-	"debug.onTaskErrors": "abort",
-	"C_Cpp.default.cppStandard": "c++98",
-	"C_Cpp.default.cStandard": "c11",
-	"C_Cpp.default.compilerPath": "/usr/bin/gcc",
-	"C_Cpp.default.intelliSenseMode": "linux-gcc-x64", // for M1, if intel, change to "clang-x64"
-	//   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, ColumnLimit: 0, DerivePointerAlignment: false, PointerAlignment: Right }",
-	"workbench.startupEditor": "newUntitledFile",
-	"workbench.iconTheme": "vscode-icons",
-	"C_Cpp.intelliSenseEngineFallback": "enabled",
-	"[php]": {
-	  "editor.quickSuggestions": {
-		"comments": true
-	  },
-	  "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-	},
-	"files.associations": {
-	  "*.c": "c",
-	  "*.h": "c",
-	  "*.cpp": "cpp",
-	  "*.hpp": "cpp",
-	  "*.mdx": "markdown"
-	},
-	"[c]": {
-	  "editor.tabSize": 4,
-	  "editor.detectIndentation": false,
-	  "editor.insertSpaces": false,
-	  "editor.renderWhitespace": "all"
-	},
-	"[cpp]": {
-	  // "editor.tabSize": 2,
-	  "editor.insertSpaces": false,
-	  "editor.wordBasedSuggestions": false,
-	  "editor.suggest.insertMode": "replace",
-	  "editor.semanticHighlighting.enabled": true
-	},
-	"http.proxySupport": "off",
-	"workbench.editor.untitled.hint": "hidden",
-	"workbench.editorAssociations": {
-	  "*.ipynb": "jupyter-notebook"
-	},
-	// javascript start
-	"diffEditor.ignoreTrimWhitespace": false,
-	//   "eslint.format.enable": true,
-	"prettier.singleQuote": true,
-	"[json]": {
-	  "editor.formatOnSave": true,
-	  "editor.tabSize": 2,
-	  "editor.insertSpaces": true,
-	  "editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-	  "editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	  },
-	  "editor.formatOnSave": true,
-	  "editor.tabSize": 2,
-	  "editor.insertSpaces": true,
-	  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-	},
-	//   "eslint.codeActionsOnSave.mode": "problems",
-	"[jsonc]": {
-	  "editor.formatOnSave": true,
-	  "editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[html]": {
-	  "editor.formatOnSave": true,
-	  "editor.defaultFormatter": "vscode.html-language-features"
-	},
-	"eslint.validate": [
-	  "javascript",
-	  "javascriptreact",
-	  "typescript",
-	  "typescriptreact"
-	],
-	"typescript.format.enable": true,
-	"[typescript]": {
-	  "editor.formatOnSave": true,
-	  "editor.tabSize": 2,
-	  "editor.insertSpaces": true,
-	  "editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"[typescriptreact]": {
-	  "editor.formatOnSave": true,
-	  "editor.tabSize": 2,
-	  "editor.insertSpaces": true,
-	  "editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	// for empty brackets
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
-	"editor.bracketPairColorization.enabled": true,
-	//javascript end
-	"[python]": {
-	  "editor.defaultFormatter": "ms-python.black-formatter",
-	  "editor.insertSpaces": true,
-	  "editor.tabSize": 4,
-	  "editor.formatOnSave": true,
-	  "editor.formatOnType": true
-	},
-	"black-formatter.path": [
-		"/goinfre/sucho/miniconda3/envs/42AI-sucho/bin/black"
-	],
-	"python.linting.enabled": true,
-	"python.linting.pycodestyleEnabled": true,
-	"python.linting.pylintArgs": ["--reports", "12", "--disable", "I0011"],
-	"python.formatting.autopep8Args": ["--indent-size=4"],
-	"python.formatting.provider": "autopep8",
-	"leetcode.workspaceFolder": "/Users/wwaya/.leetcode",
-	"terminal.integrated.inheritEnv": false,
-	"python.defaultInterpreterPath": "/Users/wwaya/Documents/miniconda3/envs/scikitlearn/bin/python",
-	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-	"php-cs-fixer.lastDownload": 1671934040621,
-	"intelephense.files.exclude": [
-	  "**/.git/**",
-	  "**/.svn/**",
-	  "**/.hg/**",
-	  "**/CVS/**",
-	  "**/.DS_Store/**",
-	  "**/node_modules/**",
-	  "**/bower_components/**",
-	  "**/vendor/**/{Test,test,Tests,tests}/**/*Test.php"
-	],
-	"php.suggest.basic": false,
-	"emmet.includeLanguages": {
-	  "php": "html"
-	},
-	"php.validate.executablePath": "/opt/homebrew/bin/php",
-	"php-docblocker.qualifyClassNames": true,
-	"php-docblocker.classTemplate": {
-	  "message": {
-		"gapAfter": true,
-		"content": "@covers DefaultClass ${1:fqcn}"
-	  },
-	  "param": {
-		"gapBefore": true
-	  },
-	  "author": {
-		"content": "@author ${###:Sungyong Cho} <${###:sucho@student.42.fr}>"
-	  },
-	  "package": {
-		"content": "@package ${1:description}"
-	  }
-	},
-	"redhat.telemetry.enabled": false,
-	"git.openRepositoryInParentFolders": "always",
-	"editor.inlineSuggest.enabled": true,
-	"github.copilot.enable": {
-	  "*": false,
-	  "plaintext": false,
-	  "markdown": false,
-	  "scminput": false
-	}
+  // Editor
+  "editor.minimap.enabled": false,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+  "editor.renderWhitespace": "all",
+  "editor.mouseWheelZoom": false,
+  "editor.quickSuggestions": { "strings": true },
+  "editor.renderControlCharacters": true,
+
+  // Terminal
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+  "terminal.external.linuxExec": "iterm",
+  "terminal.external.osxExec": "iTerm2.app",
+
+  // Workbench
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#eceef0",
+    "terminal.background": "#263137",
+    "terminal.ansiBlack": "#546d79",
+    "terminal.ansiBlue": "#40c4fe",
+    "terminal.ansiCyan": "#64fcda",
+    "terminal.ansiGreen": "#69f0ad",
+    "terminal.ansiMagenta": "#ff3f80",
+    "terminal.ansiRed": "#ff5151",
+    "terminal.ansiWhite": "#fefefe",
+    "terminal.ansiYellow": "#ffd73f",
+    "terminal.ansiBrightBlack": "#b0bec4",
+    "terminal.ansiBrightBlue": "#80d7fe",
+    "terminal.ansiBrightCyan": "#a7fdeb",
+    "terminal.ansiBrightGreen": "#b9f6c9",
+    "terminal.ansiBrightMagenta": "#ff80ab",
+    "terminal.ansiBrightRed": "#ff8980",
+    "terminal.ansiBrightWhite": "#fefefe",
+    "terminal.ansiBrightYellow": "#ffe47e"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.startupEditor": "newUntitledFile",
+
+  // Files
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.c": "c",
+    "*.h": "c",
+    "*.cpp": "cpp",
+    "*.hpp": "cpp",
+    "*.mdx": "markdown",
+    "*.css": "tailwindcss"
+  },
+
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  // C/C++
+  "C_Cpp.default.cppStandard": "c++98",
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+
+  // Extensions
+  "vsicons.dontShowNewVersionMessage": true,
+  "C_Cpp.intelliSenseEngineFallback": "enabled",
+
+  // Language-specific settings
+  // JavaScript
+  "[javascript][typescript][vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+
+  // JSON
+  "[json][jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // HTML
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  // TypeScript
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  // TypeScriptReact
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  // Python
+  "[python]": {
+    // "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  // "ruff.importStrategy": "fromEnvironment",
+  // "ruff.lineLength": 88,
+  // "ruff.interpreter": [
+  //   "/Users/wwaya/Documents/miniconda3/envs/matcha-fastapi/bin/python"
+  // ],
+  // Other settings
+  "http.proxySupport": "off",
+  "debug.onTaskErrors": "abort",
+
+  // GitHub Copilot
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  // LeetCode
+  "leetcode.defaultLanguage": "python3",
+  "leetcode.workspaceFolder": "/Users/wwaya/.leetcode",
+
+  // Zoom level
+  "window.zoomLevel": 1,
+  "codeium.enableConfig": {
+    "*": false
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "solidity.telemetry": true,
+  "terminal.integrated.inheritEnv": false,
+  "black-formatter.showNotifications": "always",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+
+  // tailwind css
+
+  //ocaml
+  "[ocaml]": {
+    "editor.tabSize": 2,
+    "editor.rulers": [80],
+    "editor.formatOnSave": true
+  },
+  "[ocaml.interface]": {
+    "editor.tabSize": 2,
+    "editor.rulers": [80],
+    "editor.formatOnSave": true
+  },
+  "makefile.configureOnOpen": true,
+  "dart.flutterSdkPath": "/Users/wwaya/development/flutter",
+  "dart.openDevTools": "flutter",
+  "dart.previewHotReloadOnSaveWatcher": true,
+  "[dart]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.inlayHints.enabled": "offUnlessPressed"
+  },
+  "workbench.editor.enablePreview": false,
+  "cmake.showOptionsMovedNotification": false,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ]
 }
