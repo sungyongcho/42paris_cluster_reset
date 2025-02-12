@@ -13,8 +13,9 @@
   // Terminal
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 14,
-  "terminal.external.linuxExec": "iterm",
   "terminal.external.osxExec": "iTerm2.app",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.external.linuxExec": "terminator",
 
   // Workbench
   "workbench.colorCustomizations": {
@@ -61,7 +62,10 @@
   "C_Cpp.default.cppStandard": "c++98",
   "C_Cpp.default.cStandard": "c11",
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-  "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+  // For macOS
+  // "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+  // For Linux
+  "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
 
   // Extensions
   "vsicons.dontShowNewVersionMessage": true,
@@ -150,7 +154,7 @@
     "*": false
   },
   "git.openRepositoryInParentFolders": "never",
-  "solidity.telemetry": true,
+  "solidity.telemetry": false,
   "terminal.integrated.inheritEnv": false,
   "black-formatter.showNotifications": "always",
   "javascript.updateImportsOnFileMove.enabled": "never",
@@ -186,5 +190,6 @@
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
     "workbench.action.tasks.runTask"
-  ]
+  ],
+  "terminal.integrated.defaultProfile.linux": "zsh"
 }
