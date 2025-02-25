@@ -14,7 +14,7 @@ dconf load / < ./configs/dconf_user.conf
 # make directory for terminator config
 [ ! -d "$TERMINATOR_DIR" ] && mkdir -p "$TERMINATOR_DIR"
 # copy configs
-cp ./configs/terminator_config $HOME/.config/terminator/config
+cp -p ./configs/terminator_config $HOME/.config/terminator/config
 
 ## vimrc
 cp ./configs/vimrc.txt $HOME/.vimrc
@@ -34,13 +34,8 @@ ssh-add $HOME/.ssh/id_rsa
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &> /dev/null
 
-code --install-extension kube.42header
-code --install-extension MariusvanWijk-JoppeKoers.codam-norminette-3
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension ms-vscode.cpptools
-code --install-extension vscode-icons-team.vscode-icons
-code --install-extension vscodevim.vim
+# vscode extensions
+cat ./config/vscode-extensions.txt | xargs -n 1 code --install-extension
 
 # Add chrome-singletone alias to .zshrc
 echo 'alias chrome-singletone="rm -rf ~/.config/google-chrome/Singleton*"' >> $HOME/.zshrc
