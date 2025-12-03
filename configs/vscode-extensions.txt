@@ -36,9 +36,9 @@ ms-vscode.cpptools-themes
 ms-vscode.makefile-tools
 nomicfoundation.hardhat-solidity
 ocamllabs.ocaml-platform
+openai.chatgpt
 sdras.vue-vscode-snippets
 stylelint.vscode-stylelint
-twxs.cmake
 vscode-icons-team.vscode-icons
 vscodevim.vim
 vue.volar
