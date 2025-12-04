@@ -35,7 +35,7 @@ ssh-add $HOME/.ssh/id_rsa
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &> /dev/null
 
 # vscode extensions
-cat ./config/vscode-extensions.txt | xargs -n 1 code --install-extension
+cat ./configs/vscode-extensions.txt | xargs -n 1 code --install-extension
 
 # Add chrome-singletone alias to .zshrc
 echo 'alias chrome-singletone="rm -rf ~/.config/google-chrome/Singleton*"' >> $HOME/.zshrc
@@ -49,3 +49,6 @@ cp ./vscode_settings/keybindings.json $HOME/.config/Code/User/
 
 echo "ssh pubkey for 42 Intra\n\n"
 cat $HOME/.ssh/id_rsa.pub
+
+mkdir -p "$HOME/.config/ruff"
+cp ./configs/ruff_pyproject.toml $HOME/.config/ruff/pyproject.yaml
